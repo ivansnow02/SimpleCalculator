@@ -4,7 +4,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
 from cal_mainwindow import Ui_MainWindow
-
+from PyQt5.QtWidgets import QGraphicsBlurEffect
 
 def is_number(num):
     if num == '0b' or '0o' or '0x' or num.isdigit():
@@ -105,6 +105,5 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     MainWindow = QMainWindow()
     ui = Calculator()
-    ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
