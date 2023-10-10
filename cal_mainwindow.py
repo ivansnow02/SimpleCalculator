@@ -198,3 +198,12 @@ class Ui_MainWindow(object):
         self.button_mod.setText(_translate("MainWindow", "%"))
         self.label.setText(_translate("MainWindow", "0"))
         self.menu.setTitle(_translate("MainWindow", "设置"))
+
+if __name__ == '__main__':
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
