@@ -1,7 +1,9 @@
 import string
 import sys
 
+from PyQt5 import QtCore
 from PyQt5.QtWidgets import QApplication, QMainWindow
+from qframelesswindow import FramelessMainWindow, StandardTitleBar
 
 from cal_mainwindow import Ui_MainWindow
 from PyQt5.QtWidgets import QGraphicsBlurEffect
@@ -13,13 +15,17 @@ def is_number(num):
         return False
 
 
-class Calculator(QMainWindow, Ui_MainWindow):
+class Calculator(FramelessMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
+        self.setupUi(self)
         self.display = '0'
 
     def setupUi(self, MainWindow):
         super().setupUi(MainWindow)
+        self.setTitleBar(StandardTitleBar(self))
+        self.setWindowTitle("Calculator")
+        self.titleBar.raise_()
         btn_string = 'button_'
         btn_id = [str(i) for i in range(10)] + [chr(i) for i in range(ord('a'), ord('f'))] + ['dot', 'plus', 'minus',
                                                                                               'mult',
@@ -102,9 +108,9 @@ class Calculator(QMainWindow, Ui_MainWindow):
 
 
 if __name__ == '__main__':
+    QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
     app = QApplication(sys.argv)
-    MainWindow = QMainWindow()
     ui = Calculator()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
+
+    ui.show()
     sys.exit(app.exec_())
