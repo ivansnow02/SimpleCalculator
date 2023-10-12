@@ -14,17 +14,21 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.setWindowModality(QtCore.Qt.NonModal)
-        MainWindow.resize(433, 560)
+        MainWindow.resize(503, 560)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
         MainWindow.setSizePolicy(sizePolicy)
-        MainWindow.setMinimumSize(QtCore.QSize(433, 560))
-        MainWindow.setWindowOpacity(8.0)
+        MainWindow.setMinimumSize(QtCore.QSize(503, 560))
         MainWindow.setLayoutDirection(QtCore.Qt.LeftToRight)
-        MainWindow.setTabShape(QtWidgets.QTabWidget.Rounded)
+        MainWindow.setStyleSheet("QMainWindow{\n"
+"    border-top-left-radius:30px;\n"
+"    border-bottom-left-radius:30px;\n"
+"    border-top-right-radius:30px;\n"
+"     border-bottom-right-radius:30px;\n"
+"\n"
+"}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.centralwidget)
@@ -33,203 +37,226 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
         self.gridLayout_2.setContentsMargins(-1, 36, -1, -1)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.button_e = ElevatedPushButton(self.centralwidget)
+        self.button_mult = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_e.sizePolicy().hasHeightForWidth())
-        self.button_e.setSizePolicy(sizePolicy)
-        self.button_e.setObjectName("button_e")
-        self.gridLayout_2.addWidget(self.button_e, 5, 4, 1, 1)
-        self.button_4 = ElevatedPushButton(self.centralwidget)
+        sizePolicy.setHeightForWidth(self.button_mult.sizePolicy().hasHeightForWidth())
+        self.button_mult.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_mult.setFont(font)
+        self.button_mult.setBorderRadius(10)
+        self.button_mult.setObjectName("button_mult")
+        self.gridLayout_2.addWidget(self.button_mult, 4, 5, 1, 1)
+        self.label = CaptionLabel(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_4.sizePolicy().hasHeightForWidth())
-        self.button_4.setSizePolicy(sizePolicy)
-        self.button_4.setObjectName("button_4")
-        self.gridLayout_2.addWidget(self.button_4, 2, 1, 1, 1)
-        self.button_pow = ElevatedPushButton(self.centralwidget)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Consolas")
+        font.setPointSize(30)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.label.setAutoFillBackground(False)
+        self.label.setStyleSheet("CaptionLabel{\n"
+"    color: #6750a4;\n"
+"\n"
+"    padding: 8px 24px 9px 24px;\n"
+"    outline: none;\n"
+"    border: 3px outset #6750a4;\n"
+"    border-radius: 10px;\n"
+"    background-color: transparent;\n"
+"}")
+        self.label.setFrameShape(QtWidgets.QFrame.Box)
+        self.label.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.label.setMidLineWidth(1)
+        self.label.setScaledContents(True)
+        self.label.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label.setWordWrap(False)
+        self.label.setIndent(0)
+        self.label.setObjectName("label")
+        self.gridLayout_2.addWidget(self.label, 0, 1, 1, 5)
+        self.button_d = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_pow.sizePolicy().hasHeightForWidth())
-        self.button_pow.setSizePolicy(sizePolicy)
-        self.button_pow.setObjectName("button_pow")
-        self.gridLayout_2.addWidget(self.button_pow, 6, 5, 1, 1)
+        sizePolicy.setHeightForWidth(self.button_d.sizePolicy().hasHeightForWidth())
+        self.button_d.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_d.setFont(font)
+        self.button_d.setBorderRadius(10)
+        self.button_d.setObjectName("button_d")
+        self.gridLayout_2.addWidget(self.button_d, 4, 4, 1, 1)
         self.button_c = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.button_c.sizePolicy().hasHeightForWidth())
         self.button_c.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_c.setFont(font)
+        self.button_c.setBorderRadius(10)
         self.button_c.setObjectName("button_c")
         self.gridLayout_2.addWidget(self.button_c, 3, 4, 1, 1)
-        self.button_0o = ElevatedPushButton(self.centralwidget)
+        self.button_8 = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_0o.sizePolicy().hasHeightForWidth())
-        self.button_0o.setSizePolicy(sizePolicy)
-        self.button_0o.setObjectName("button_0o")
-        self.gridLayout_2.addWidget(self.button_0o, 6, 2, 1, 1)
-        self.button_0b = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_0b.sizePolicy().hasHeightForWidth())
-        self.button_0b.setSizePolicy(sizePolicy)
-        self.button_0b.setObjectName("button_0b")
-        self.gridLayout_2.addWidget(self.button_0b, 6, 3, 1, 1)
+        sizePolicy.setHeightForWidth(self.button_8.sizePolicy().hasHeightForWidth())
+        self.button_8.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_8.setFont(font)
+        self.button_8.setBorderRadius(10)
+        self.button_8.setObjectName("button_8")
+        self.gridLayout_2.addWidget(self.button_8, 3, 2, 1, 1)
         self.button_0 = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.button_0.sizePolicy().hasHeightForWidth())
         self.button_0.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_0.setFont(font)
+        self.button_0.setBorderRadius(10)
         self.button_0.setObjectName("button_0")
         self.gridLayout_2.addWidget(self.button_0, 4, 2, 1, 1)
-        self.button_ac = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_ac.sizePolicy().hasHeightForWidth())
-        self.button_ac.setSizePolicy(sizePolicy)
-        self.button_ac.setObjectName("button_ac")
-        self.gridLayout_2.addWidget(self.button_ac, 1, 6, 1, 1)
-        self.button_1 = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_1.sizePolicy().hasHeightForWidth())
-        self.button_1.setSizePolicy(sizePolicy)
-        self.button_1.setObjectName("button_1")
-        self.gridLayout_2.addWidget(self.button_1, 1, 1, 1, 1)
-        self.button_b = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_b.sizePolicy().hasHeightForWidth())
-        self.button_b.setSizePolicy(sizePolicy)
-        self.button_b.setObjectName("button_b")
-        self.gridLayout_2.addWidget(self.button_b, 2, 4, 1, 1)
-        self.button_6 = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_6.sizePolicy().hasHeightForWidth())
-        self.button_6.setSizePolicy(sizePolicy)
-        self.button_6.setObjectName("button_6")
-        self.gridLayout_2.addWidget(self.button_6, 2, 3, 1, 1)
-        self.button_dot = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_dot.sizePolicy().hasHeightForWidth())
-        self.button_dot.setSizePolicy(sizePolicy)
-        self.button_dot.setObjectName("button_dot")
-        self.gridLayout_2.addWidget(self.button_dot, 4, 1, 1, 1)
-        self.button_a = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_a.sizePolicy().hasHeightForWidth())
-        self.button_a.setSizePolicy(sizePolicy)
-        self.button_a.setObjectName("button_a")
-        self.gridLayout_2.addWidget(self.button_a, 1, 4, 1, 1)
-        self.button_0x = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_0x.sizePolicy().hasHeightForWidth())
-        self.button_0x.setSizePolicy(sizePolicy)
-        self.button_0x.setObjectName("button_0x")
-        self.gridLayout_2.addWidget(self.button_0x, 6, 1, 1, 1)
-        self.button_mod = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_mod.sizePolicy().hasHeightForWidth())
-        self.button_mod.setSizePolicy(sizePolicy)
-        self.button_mod.setObjectName("button_mod")
-        self.gridLayout_2.addWidget(self.button_mod, 2, 5, 1, 1)
-        self.button_f = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_f.sizePolicy().hasHeightForWidth())
-        self.button_f.setSizePolicy(sizePolicy)
-        self.button_f.setObjectName("button_f")
-        self.gridLayout_2.addWidget(self.button_f, 6, 4, 1, 1)
-        self.button_2 = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_2.sizePolicy().hasHeightForWidth())
-        self.button_2.setSizePolicy(sizePolicy)
-        self.button_2.setObjectName("button_2")
-        self.gridLayout_2.addWidget(self.button_2, 1, 2, 1, 1)
-        self.button_del = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_del.sizePolicy().hasHeightForWidth())
-        self.button_del.setSizePolicy(sizePolicy)
-        self.button_del.setObjectName("button_del")
-        self.gridLayout_2.addWidget(self.button_del, 2, 6, 1, 1)
-        self.button_7 = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_7.sizePolicy().hasHeightForWidth())
-        self.button_7.setSizePolicy(sizePolicy)
-        self.button_7.setObjectName("button_7")
-        self.gridLayout_2.addWidget(self.button_7, 3, 1, 1, 1)
-        self.button_plus = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_plus.sizePolicy().hasHeightForWidth())
-        self.button_plus.setSizePolicy(sizePolicy)
-        self.button_plus.setObjectName("button_plus")
-        self.gridLayout_2.addWidget(self.button_plus, 1, 5, 1, 1)
-        self.button_bin = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_bin.sizePolicy().hasHeightForWidth())
-        self.button_bin.setSizePolicy(sizePolicy)
-        self.button_bin.setObjectName("button_bin")
-        self.gridLayout_2.addWidget(self.button_bin, 3, 6, 1, 1)
         self.button_5 = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.button_5.sizePolicy().hasHeightForWidth())
         self.button_5.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_5.setFont(font)
+        self.button_5.setBorderRadius(10)
         self.button_5.setObjectName("button_5")
         self.gridLayout_2.addWidget(self.button_5, 2, 2, 1, 1)
-        self.button_rb = ElevatedPushButton(self.centralwidget)
+        self.button_3 = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_rb.sizePolicy().hasHeightForWidth())
-        self.button_rb.setSizePolicy(sizePolicy)
-        self.button_rb.setObjectName("button_rb")
-        self.gridLayout_2.addWidget(self.button_rb, 5, 2, 1, 1)
-        self.button_equal = ElevatedPushButton(self.centralwidget)
+        sizePolicy.setHeightForWidth(self.button_3.sizePolicy().hasHeightForWidth())
+        self.button_3.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_3.setFont(font)
+        self.button_3.setBorderRadius(10)
+        self.button_3.setObjectName("button_3")
+        self.gridLayout_2.addWidget(self.button_3, 1, 3, 1, 1)
+        self.button_a = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_equal.sizePolicy().hasHeightForWidth())
-        self.button_equal.setSizePolicy(sizePolicy)
-        self.button_equal.setStyleSheet("PushButton, ToolButton, ToggleButton, ToggleToolButton {\n"
+        sizePolicy.setHeightForWidth(self.button_a.sizePolicy().hasHeightForWidth())
+        self.button_a.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_a.setFont(font)
+        self.button_a.setBorderRadius(10)
+        self.button_a.setObjectName("button_a")
+        self.gridLayout_2.addWidget(self.button_a, 1, 4, 1, 1)
+        self.button_0o = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_0o.sizePolicy().hasHeightForWidth())
+        self.button_0o.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_0o.setFont(font)
+        self.button_0o.setBorderRadius(10)
+        self.button_0o.setObjectName("button_0o")
+        self.gridLayout_2.addWidget(self.button_0o, 6, 2, 1, 1)
+        self.button_7 = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_7.sizePolicy().hasHeightForWidth())
+        self.button_7.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_7.setFont(font)
+        self.button_7.setBorderRadius(10)
+        self.button_7.setObjectName("button_7")
+        self.gridLayout_2.addWidget(self.button_7, 3, 1, 1, 1)
+        self.button_pow = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_pow.sizePolicy().hasHeightForWidth())
+        self.button_pow.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_pow.setFont(font)
+        self.button_pow.setBorderRadius(10)
+        self.button_pow.setObjectName("button_pow")
+        self.gridLayout_2.addWidget(self.button_pow, 6, 4, 1, 1)
+        self.button_ac = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_ac.sizePolicy().hasHeightForWidth())
+        self.button_ac.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_ac.setFont(font)
+        self.button_ac.setBorderRadius(10)
+        self.button_ac.setObjectName("button_ac")
+        self.gridLayout_2.addWidget(self.button_ac, 0, 6, 1, 1)
+        self.button_1 = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_1.sizePolicy().hasHeightForWidth())
+        self.button_1.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_1.setFont(font)
+        self.button_1.setStyleSheet("PushButton, ToolButton, ToggleButton, ToggleToolButton {\n"
 "    color: #6750a4;\n"
 "    /* font: 14px \'Segoe UI\', \'Microsoft YaHei\'; */\n"
 "    padding: 8px 24px 9px 24px;\n"
 "    outline: none;\n"
 "    border: none;\n"
 "    background-color: transparent;\n"
+"backdrop-filter: saturate(180%) blur(20px)\n"
 "}\n"
 "\n"
 "ToolButton {\n"
@@ -264,6 +291,7 @@ class Ui_MainWindow(object):
 "ElevatedDropDownPushButton[hasIcon=false],\n"
 "TonalDropDownPushButton[hasIcon=false],\n"
 "FilledDropDownPushButton[hasIcon=false] {\n"
+"    ;\n"
 "    padding: 8px 40px 9px 24px;\n"
 "}\n"
 "\n"
@@ -292,6 +320,9 @@ class Ui_MainWindow(object):
 "\n"
 "ElevatedPushButton {\n"
 "    color: #6750a4;\n"
+"    outline: none;\n"
+"    border: none;\n"
+"    background-color: transparent;\n"
 "}\n"
 "\n"
 "TonalPushButton {\n"
@@ -420,14 +451,146 @@ class Ui_MainWindow(object):
 "InputChip[hasIcon=true][isClosable=true] {\n"
 "    padding: 7px 33px 8px 38px;\n"
 "}")
-        self.button_equal.setObjectName("button_equal")
-        self.gridLayout_2.addWidget(self.button_equal, 4, 3, 2, 1)
+        self.button_1.setBorderRadius(10)
+        self.button_1.setObjectName("button_1")
+        self.gridLayout_2.addWidget(self.button_1, 1, 1, 1, 1)
+        self.button_del = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_del.sizePolicy().hasHeightForWidth())
+        self.button_del.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_del.setFont(font)
+        self.button_del.setBorderRadius(10)
+        self.button_del.setObjectName("button_del")
+        self.gridLayout_2.addWidget(self.button_del, 1, 6, 1, 1)
+        self.button_minus = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_minus.sizePolicy().hasHeightForWidth())
+        self.button_minus.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_minus.setFont(font)
+        self.button_minus.setBorderRadius(10)
+        self.button_minus.setObjectName("button_minus")
+        self.gridLayout_2.addWidget(self.button_minus, 2, 5, 1, 1)
+        self.button_0x = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_0x.sizePolicy().hasHeightForWidth())
+        self.button_0x.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_0x.setFont(font)
+        self.button_0x.setBorderRadius(10)
+        self.button_0x.setObjectName("button_0x")
+        self.gridLayout_2.addWidget(self.button_0x, 6, 1, 1, 1)
+        self.button_0b = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_0b.sizePolicy().hasHeightForWidth())
+        self.button_0b.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_0b.setFont(font)
+        self.button_0b.setBorderRadius(10)
+        self.button_0b.setObjectName("button_0b")
+        self.gridLayout_2.addWidget(self.button_0b, 6, 3, 1, 1)
+        self.button_dot = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_dot.sizePolicy().hasHeightForWidth())
+        self.button_dot.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_dot.setFont(font)
+        self.button_dot.setBorderRadius(10)
+        self.button_dot.setObjectName("button_dot")
+        self.gridLayout_2.addWidget(self.button_dot, 5, 1, 1, 1)
+        self.button_bin = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_bin.sizePolicy().hasHeightForWidth())
+        self.button_bin.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_bin.setFont(font)
+        self.button_bin.setBorderRadius(10)
+        self.button_bin.setObjectName("button_bin")
+        self.gridLayout_2.addWidget(self.button_bin, 2, 6, 1, 1)
+        self.button_4 = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_4.sizePolicy().hasHeightForWidth())
+        self.button_4.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_4.setFont(font)
+        self.button_4.setBorderRadius(10)
+        self.button_4.setObjectName("button_4")
+        self.gridLayout_2.addWidget(self.button_4, 2, 1, 1, 1)
+        self.button_div = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_div.sizePolicy().hasHeightForWidth())
+        self.button_div.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_div.setFont(font)
+        self.button_div.setBorderRadius(10)
+        self.button_div.setObjectName("button_div")
+        self.gridLayout_2.addWidget(self.button_div, 3, 5, 1, 1)
+        self.button_plus = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_plus.sizePolicy().hasHeightForWidth())
+        self.button_plus.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_plus.setFont(font)
+        self.button_plus.setBorderRadius(10)
+        self.button_plus.setObjectName("button_plus")
+        self.gridLayout_2.addWidget(self.button_plus, 1, 5, 1, 1)
         self.button_9 = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.button_9.sizePolicy().hasHeightForWidth())
         self.button_9.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_9.setFont(font)
         self.button_9.setStyleSheet("PushButton, ToolButton, ToggleButton, ToggleToolButton {\n"
 "    color: #6750a4;\n"
 "    /* font: 14px \'Segoe UI\', \'Microsoft YaHei\'; */\n"
@@ -625,111 +788,361 @@ class Ui_MainWindow(object):
 "InputChip[hasIcon=true][isClosable=true] {\n"
 "    padding: 7px 33px 8px 38px;\n"
 "}")
+        self.button_9.setBorderRadius(10)
         self.button_9.setObjectName("button_9")
         self.gridLayout_2.addWidget(self.button_9, 3, 3, 1, 1)
-        self.button_mult = ElevatedPushButton(self.centralwidget)
+        self.button_rb = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_mult.sizePolicy().hasHeightForWidth())
-        self.button_mult.setSizePolicy(sizePolicy)
-        self.button_mult.setObjectName("button_mult")
-        self.gridLayout_2.addWidget(self.button_mult, 4, 5, 1, 1)
-        self.button_oct = ElevatedPushButton(self.centralwidget)
+        sizePolicy.setHeightForWidth(self.button_rb.sizePolicy().hasHeightForWidth())
+        self.button_rb.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_rb.setFont(font)
+        self.button_rb.setFlat(False)
+        self.button_rb.setBorderRadius(10)
+        self.button_rb.setObjectName("button_rb")
+        self.gridLayout_2.addWidget(self.button_rb, 4, 3, 1, 1)
+        self.button_e = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_oct.sizePolicy().hasHeightForWidth())
-        self.button_oct.setSizePolicy(sizePolicy)
-        self.button_oct.setObjectName("button_oct")
-        self.gridLayout_2.addWidget(self.button_oct, 4, 6, 1, 1)
+        sizePolicy.setHeightForWidth(self.button_e.sizePolicy().hasHeightForWidth())
+        self.button_e.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_e.setFont(font)
+        self.button_e.setBorderRadius(10)
+        self.button_e.setObjectName("button_e")
+        self.gridLayout_2.addWidget(self.button_e, 5, 3, 1, 1)
+        self.button_6 = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_6.sizePolicy().hasHeightForWidth())
+        self.button_6.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_6.setFont(font)
+        self.button_6.setBorderRadius(10)
+        self.button_6.setObjectName("button_6")
+        self.gridLayout_2.addWidget(self.button_6, 2, 3, 1, 1)
         self.button_lb = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.button_lb.sizePolicy().hasHeightForWidth())
         self.button_lb.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_lb.setFont(font)
+        self.button_lb.setBorderRadius(10)
         self.button_lb.setObjectName("button_lb")
-        self.gridLayout_2.addWidget(self.button_lb, 5, 1, 1, 1)
-        self.button_3 = ElevatedPushButton(self.centralwidget)
+        self.gridLayout_2.addWidget(self.button_lb, 4, 1, 1, 1)
+        self.button_oct = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_3.sizePolicy().hasHeightForWidth())
-        self.button_3.setSizePolicy(sizePolicy)
-        self.button_3.setObjectName("button_3")
-        self.gridLayout_2.addWidget(self.button_3, 1, 3, 1, 1)
+        sizePolicy.setHeightForWidth(self.button_oct.sizePolicy().hasHeightForWidth())
+        self.button_oct.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_oct.setFont(font)
+        self.button_oct.setBorderRadius(10)
+        self.button_oct.setObjectName("button_oct")
+        self.gridLayout_2.addWidget(self.button_oct, 3, 6, 1, 1)
         self.button_hex = ElevatedPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.button_hex.sizePolicy().hasHeightForWidth())
         self.button_hex.setSizePolicy(sizePolicy)
-        self.button_hex.setObjectName("button_hex")
-        self.gridLayout_2.addWidget(self.button_hex, 5, 6, 1, 1)
-        self.button_d = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_d.sizePolicy().hasHeightForWidth())
-        self.button_d.setSizePolicy(sizePolicy)
-        self.button_d.setObjectName("button_d")
-        self.gridLayout_2.addWidget(self.button_d, 4, 4, 1, 1)
-        self.button_minus = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_minus.sizePolicy().hasHeightForWidth())
-        self.button_minus.setSizePolicy(sizePolicy)
-        self.button_minus.setObjectName("button_minus")
-        self.gridLayout_2.addWidget(self.button_minus, 5, 5, 1, 1)
-        self.button_div = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_div.sizePolicy().hasHeightForWidth())
-        self.button_div.setSizePolicy(sizePolicy)
-        self.button_div.setObjectName("button_div")
-        self.gridLayout_2.addWidget(self.button_div, 3, 5, 1, 1)
-        self.button_8 = ElevatedPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.button_8.sizePolicy().hasHeightForWidth())
-        self.button_8.setSizePolicy(sizePolicy)
-        self.button_8.setObjectName("button_8")
-        self.gridLayout_2.addWidget(self.button_8, 3, 2, 1, 1)
-        self.label = CaptionLabel(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
-        self.label.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
-        font.setFamily("Consolas")
-        font.setPointSize(30)
+        font.setPointSize(18)
         font.setBold(False)
         font.setWeight(50)
-        self.label.setFont(font)
-        self.label.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.label.setAutoFillBackground(False)
-        self.label.setStyleSheet("CaptionLabel{\n"
+        self.button_hex.setFont(font)
+        self.button_hex.setBorderRadius(10)
+        self.button_hex.setObjectName("button_hex")
+        self.gridLayout_2.addWidget(self.button_hex, 4, 6, 1, 1)
+        self.button_2 = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_2.sizePolicy().hasHeightForWidth())
+        self.button_2.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_2.setFont(font)
+        self.button_2.setBorderRadius(10)
+        self.button_2.setObjectName("button_2")
+        self.gridLayout_2.addWidget(self.button_2, 1, 2, 1, 1)
+        self.button_f = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_f.sizePolicy().hasHeightForWidth())
+        self.button_f.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_f.setFont(font)
+        self.button_f.setBorderRadius(10)
+        self.button_f.setObjectName("button_f")
+        self.gridLayout_2.addWidget(self.button_f, 5, 2, 1, 1)
+        self.button_b = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_b.sizePolicy().hasHeightForWidth())
+        self.button_b.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_b.setFont(font)
+        self.button_b.setBorderRadius(10)
+        self.button_b.setObjectName("button_b")
+        self.gridLayout_2.addWidget(self.button_b, 2, 4, 1, 1)
+        self.button_mod = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_mod.sizePolicy().hasHeightForWidth())
+        self.button_mod.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_mod.setFont(font)
+        self.button_mod.setBorderRadius(10)
+        self.button_mod.setObjectName("button_mod")
+        self.gridLayout_2.addWidget(self.button_mod, 5, 4, 1, 1)
+        self.button_equal = ElevatedPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.button_equal.sizePolicy().hasHeightForWidth())
+        self.button_equal.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.button_equal.setFont(font)
+        self.button_equal.setStyleSheet("PushButton, ToolButton, ToggleButton, ToggleToolButton {\n"
 "    color: #6750a4;\n"
-"\n"
+"    /* font: 14px \'Segoe UI\', \'Microsoft YaHei\'; */\n"
 "    padding: 8px 24px 9px 24px;\n"
 "    outline: none;\n"
 "    border: none;\n"
 "    background-color: transparent;\n"
+"}\n"
+"\n"
+"ToolButton {\n"
+"    padding: 8px 9px 9px 8px;\n"
+"}\n"
+"\n"
+"PushButton[hasIcon=false] {\n"
+"    padding: 8px 24px 9px 24px;\n"
+"}\n"
+"\n"
+"PushButton[hasIcon=true] {\n"
+"    padding: 8px 24px 9px 40px;\n"
+"}\n"
+"\n"
+"PushButton:disabled {\n"
+"    color: rgba(0, 0, 0, 0.37);\n"
+"}\n"
+"\n"
+"TextPushButton[hasIcon=false]  {\n"
+"    padding: 8px 13px 9px 13px;\n"
+"}\n"
+"\n"
+"TextPushButton[hasIcon=true]  {\n"
+"    padding: 8px 17px 9px 37px;\n"
+"}\n"
+"\n"
+"DropDownToolButton, PrimaryDropDownToolButton {\n"
+"    padding: 5px 31px 6px 8px;\n"
+"}\n"
+"\n"
+"OutlinedDropDownPushButton[hasIcon=false],\n"
+"ElevatedDropDownPushButton[hasIcon=false],\n"
+"TonalDropDownPushButton[hasIcon=false],\n"
+"FilledDropDownPushButton[hasIcon=false] {\n"
+"    padding: 8px 40px 9px 24px;\n"
+"}\n"
+"\n"
+"TextDropDownPushButton[hasIcon=false] {\n"
+"    padding: 8px 34px 9px 24px;\n"
+"}\n"
+"\n"
+"OutlinedDropDownPushButton[hasIcon=true],\n"
+"ElevatedDropDownPushButton[hasIcon=true],\n"
+"TonalDropDownPushButton[hasIcon=true],\n"
+"FilledDropDownPushButton[hasIcon=true] {\n"
+"    padding: 8px 40px 9px 40px;\n"
+"}\n"
+"\n"
+"TextDropDownPushButton[hasIcon=true] {\n"
+"    padding: 8px 34px 9px 37px;\n"
+"}\n"
+"\n"
+"\n"
+"FilledPushButton,\n"
+"PrimaryToolButton,\n"
+"ToggleButton:checked,\n"
+"ToggleToolButton:checked {\n"
+"    color: white;\n"
+"}\n"
+"\n"
+"ElevatedPushButton {\n"
+"    color: #6750a4;\n"
+"}\n"
+"\n"
+"TonalPushButton {\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"\n"
+"SplitDropButton,\n"
+"PrimarySplitDropButton {\n"
+"    border-left: none;\n"
+"    border-top-left-radius: 0;\n"
+"    border-bottom-left-radius: 0;\n"
+"}\n"
+"\n"
+"#splitPushButton,\n"
+"#splitToolButton,\n"
+"#primarySplitPushButton,\n"
+"#primarySplitToolButton {\n"
+"    border-top-right-radius: 0;\n"
+"    border-bottom-right-radius: 0;\n"
+"}\n"
+"\n"
+"#splitPushButton:pressed,\n"
+"#splitToolButton:pressed,\n"
+"SplitDropButton:pressed {\n"
+"    border-bottom: 1px solid rgba(0, 0, 0, 0.183);\n"
+"}\n"
+"\n"
+"PrimarySplitDropButton:pressed {\n"
+"    border-bottom: 1px solid #4d3c7b;\n"
+"}\n"
+"\n"
+"#primarySplitPushButton, #primarySplitToolButton {\n"
+"    border-right: 1px solid #8373ac;\n"
+"}\n"
+"\n"
+"#primarySplitPushButton:pressed, #primarySplitToolButton:pressed {\n"
+"    border-bottom: 1px solid #4d3c7b;\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"RadioButton {\n"
+"    min-height: 30px;\n"
+"    max-height: 30px;\n"
+"    padding-left: 5px;\n"
+"    background-color: transparent;\n"
+"    font: 14px \'Segoe UI\', \'Microsoft YaHei\', \'PingFang SC\';\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"RadioButton::indicator {\n"
+"    width: 16px;\n"
+"    height: 16px;\n"
+"    border-radius: 10px;\n"
+"    border: 2px solid #49454F;\n"
+"    background-color: transparent;\n"
+"    margin-right: 4px;\n"
+"}\n"
+"\n"
+"RadioButton::indicator:hover {\n"
+"    border: 2px solid #1D1B20;\n"
+"    background-color: rgba(0, 0, 0, 7);\n"
+"}\n"
+"\n"
+"RadioButton::indicator:pressed {\n"
+"    border: 2px solid #1D1B20;\n"
+"    background-color: rgba(0, 0, 0, 10);\n"
+"}\n"
+"\n"
+"RadioButton::indicator:checked {\n"
+"    height: 20px;\n"
+"    width: 20px;\n"
+"    border: none;\n"
+"    border-radius: 10px;\n"
+"    background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,\n"
+"            stop:0 #6750a4,\n"
+"            stop:0.5 #6750a4,\n"
+"            stop:0.6 transparent,\n"
+"            stop:0.8 transparent,\n"
+"            stop:0.9 #6750a4,\n"
+"            stop:1 #6750a4);\n"
+"}\n"
+"\n"
+"\n"
+"RadioButton:disabled {\n"
+"    color: rgba(0, 0, 0, 110);\n"
+"}\n"
+"\n"
+"RadioButton::indicator:disabled {\n"
+"    border: 2px solid #bbbbbb;\n"
+"    background-color: transparent;\n"
+"}\n"
+"\n"
+"RadioButton::indicator:disabled:checked {\n"
+"    border: none;\n"
+"    background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,\n"
+"            stop:0 #bbbbbb,\n"
+"            stop:0.5 #bbbbbb,\n"
+"            stop:0.6 transparent,\n"
+"            stop:0.8 transparent,\n"
+"            stop:0.9 #bbbbbb,\n"
+"            stop:1 #bbbbbb);\n"
+"}\n"
+"\n"
+"ChipBase {\n"
+"    color: #49454f;\n"
+"}\n"
+"\n"
+"FilterChip[hasIcon=false][hasDropMenu=false],\n"
+"InputChip[hasIcon=false][isClosable=false] {\n"
+"    padding: 7px 16px 8px 16px;\n"
+"}\n"
+"\n"
+"FilterChip[hasIcon=true][hasDropMenu=false],\n"
+"InputChip[hasIcon=true][isClosable=false] {\n"
+"    padding: 7px 16px 8px 38px;\n"
+"}\n"
+"\n"
+"FilterChip[hasIcon=false][hasDropMenu=true],\n"
+"InputChip[hasIcon=false][isClosable=true] {\n"
+"    padding: 7px 33px 8px 16px;\n"
+"}\n"
+"\n"
+"FilterChip[hasIcon=true][hasDropMenu=true],\n"
+"InputChip[hasIcon=true][isClosable=true] {\n"
+"    padding: 7px 33px 8px 38px;\n"
 "}")
-        self.label.setFrameShape(QtWidgets.QFrame.Box)
-        self.label.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.label.setMidLineWidth(1)
-        self.label.setScaledContents(True)
-        self.label.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label.setWordWrap(False)
-        self.label.setIndent(0)
-        self.label.setObjectName("label")
-        self.gridLayout_2.addWidget(self.label, 0, 1, 1, 6)
+        self.button_equal.setBorderRadius(10)
+        self.button_equal.setObjectName("button_equal")
+        self.gridLayout_2.addWidget(self.button_equal, 5, 5, 2, 2)
         self.gridLayout_3.addLayout(self.gridLayout_2, 0, 1, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -742,39 +1155,39 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Calculator"))
-        self.button_e.setText(_translate("MainWindow", "E"))
-        self.button_4.setText(_translate("MainWindow", "4"))
-        self.button_pow.setText(_translate("MainWindow", "**"))
+        self.button_mult.setText(_translate("MainWindow", "*"))
+        self.label.setText(_translate("MainWindow", "0"))
+        self.button_d.setText(_translate("MainWindow", "D"))
         self.button_c.setText(_translate("MainWindow", "C"))
-        self.button_0o.setText(_translate("MainWindow", "0o"))
-        self.button_0b.setText(_translate("MainWindow", "0b"))
+        self.button_8.setText(_translate("MainWindow", "8"))
         self.button_0.setText(_translate("MainWindow", "0"))
+        self.button_5.setText(_translate("MainWindow", "5"))
+        self.button_3.setText(_translate("MainWindow", "3"))
+        self.button_a.setText(_translate("MainWindow", "A"))
+        self.button_0o.setText(_translate("MainWindow", "0o"))
+        self.button_7.setText(_translate("MainWindow", "7"))
+        self.button_pow.setText(_translate("MainWindow", "**"))
         self.button_ac.setText(_translate("MainWindow", "AC"))
         self.button_1.setText(_translate("MainWindow", "1"))
-        self.button_b.setText(_translate("MainWindow", "B"))
-        self.button_6.setText(_translate("MainWindow", "6"))
-        self.button_dot.setText(_translate("MainWindow", "."))
-        self.button_a.setText(_translate("MainWindow", "A"))
-        self.button_0x.setText(_translate("MainWindow", "0x"))
-        self.button_mod.setText(_translate("MainWindow", "%"))
-        self.button_f.setText(_translate("MainWindow", "F"))
-        self.button_2.setText(_translate("MainWindow", "2"))
         self.button_del.setText(_translate("MainWindow", "DEL"))
-        self.button_7.setText(_translate("MainWindow", "7"))
-        self.button_plus.setText(_translate("MainWindow", "+"))
-        self.button_bin.setText(_translate("MainWindow", "BIN"))
-        self.button_5.setText(_translate("MainWindow", "5"))
-        self.button_rb.setText(_translate("MainWindow", ")"))
-        self.button_equal.setText(_translate("MainWindow", "="))
-        self.button_9.setText(_translate("MainWindow", "9"))
-        self.button_mult.setText(_translate("MainWindow", "*"))
-        self.button_oct.setText(_translate("MainWindow", "OCT"))
-        self.button_lb.setText(_translate("MainWindow", "("))
-        self.button_3.setText(_translate("MainWindow", "3"))
-        self.button_hex.setText(_translate("MainWindow", "HEX"))
-        self.button_d.setText(_translate("MainWindow", "D"))
         self.button_minus.setText(_translate("MainWindow", "-"))
+        self.button_0x.setText(_translate("MainWindow", "0x"))
+        self.button_0b.setText(_translate("MainWindow", "0b"))
+        self.button_dot.setText(_translate("MainWindow", "."))
+        self.button_bin.setText(_translate("MainWindow", "BIN"))
+        self.button_4.setText(_translate("MainWindow", "4"))
         self.button_div.setText(_translate("MainWindow", "/"))
-        self.button_8.setText(_translate("MainWindow", "8"))
-        self.label.setText(_translate("MainWindow", "0"))
+        self.button_plus.setText(_translate("MainWindow", "+"))
+        self.button_9.setText(_translate("MainWindow", "9"))
+        self.button_rb.setText(_translate("MainWindow", ")"))
+        self.button_e.setText(_translate("MainWindow", "E"))
+        self.button_6.setText(_translate("MainWindow", "6"))
+        self.button_lb.setText(_translate("MainWindow", "("))
+        self.button_oct.setText(_translate("MainWindow", "OCT"))
+        self.button_hex.setText(_translate("MainWindow", "HEX"))
+        self.button_2.setText(_translate("MainWindow", "2"))
+        self.button_f.setText(_translate("MainWindow", "F"))
+        self.button_b.setText(_translate("MainWindow", "B"))
+        self.button_mod.setText(_translate("MainWindow", "%"))
+        self.button_equal.setText(_translate("MainWindow", "="))
 from qmaterialwidgets import CaptionLabel, ElevatedPushButton

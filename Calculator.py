@@ -1,12 +1,18 @@
 import string
 import sys
 
-from PyQt5 import QtCore
+from PyQt5 import QtCore, QtWidgets
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from qframelesswindow import FramelessMainWindow, StandardTitleBar
+from qframelesswindow import FramelessMainWindow, StandardTitleBar, WindowEffect
+from qframelesswindow.windows import WindowsWindowEffect
+from qframelesswindow import AcrylicWindow
 
 from cal_mainwindow import Ui_MainWindow
 from PyQt5.QtWidgets import QGraphicsBlurEffect
+
+
 
 def is_number(num):
     if num == '0b' or '0o' or '0x' or num.isdigit():
@@ -15,17 +21,24 @@ def is_number(num):
         return False
 
 
-class Calculator(FramelessMainWindow, Ui_MainWindow):
+class Calculator(QMainWindow,AcrylicWindow,  Ui_MainWindow):
     def __init__(self):
         super().__init__()
+        self.windowEffect = WindowsWindowEffect(self)
         self.setupUi(self)
         self.display = '0'
 
     def setupUi(self, MainWindow):
         super().setupUi(MainWindow)
-        self.setTitleBar(StandardTitleBar(self))
+        self.setTabShape(QtWidgets.QTabWidget.Triangular)
         self.setWindowTitle("Calculator")
+        self.setStyleSheet("background:transparent")
+        self.windowEffect.setAcrylicEffect(int(self.winId()), enableShadow=False)
+        # self.windowEffect.setMicaEffect(int(self.winId()), False, True)
+        self.setWindowTitle("Calculator")
+        self.setWindowIcon(QIcon('icon.png'))
         self.titleBar.raise_()
+
         btn_string = 'button_'
         btn_id = [str(i) for i in range(10)] + [chr(i) for i in range(ord('a'), ord('f'))] + ['dot', 'plus', 'minus',
                                                                                               'mult',
@@ -108,7 +121,10 @@ class Calculator(FramelessMainWindow, Ui_MainWindow):
 
 
 if __name__ == '__main__':
-    QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
+    # enable dpi scale
+    QApplication.setHighDpiScaleFactorRoundingPolicy(Qt.HighDpiScaleFactorRoundingPolicy.PassThrough)
+    QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
+    QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps)
     app = QApplication(sys.argv)
     ui = Calculator()
 
