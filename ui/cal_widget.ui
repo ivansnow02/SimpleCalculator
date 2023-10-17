@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frame</class>
+ <widget class="QFrame" name="Frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>544</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>544</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <item row="4" column="4">
+      <widget class="ElevatedPushButton" name="button_d">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>D</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="ElevatedPushButton" name="button_b">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>B</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="ElevatedPushButton" name="button_a">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>A</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="ElevatedPushButton" name="button_0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="ElevatedPushButton" name="button_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="ElevatedPushButton" name="button_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="ElevatedPushButton" name="button_lb">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>(</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="ElevatedPushButton" name="button_del">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>DEL</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="6">
+      <widget class="ElevatedPushButton" name="button_oct">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>OCT</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="ElevatedPushButton" name="button_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="ElevatedPushButton" name="button_f">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>F</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="ElevatedPushButton" name="button_9">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">PushButton, ToolButton, ToggleButton, ToggleToolButton {
+    color: #6750a4;
+    /* font: 14px 'Segoe UI', 'Microsoft YaHei'; */
+    padding: 8px 24px 9px 24px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+ToolButton {
+    padding: 8px 9px 9px 8px;
+}
+
+PushButton[hasIcon=false] {
+    padding: 8px 24px 9px 24px;
+}
+
+PushButton[hasIcon=true] {
+    padding: 8px 24px 9px 40px;
+}
+
+PushButton:disabled {
+    color: rgba(0, 0, 0, 0.37);
+}
+
+TextPushButton[hasIcon=false]  {
+    padding: 8px 13px 9px 13px;
+}
+
+TextPushButton[hasIcon=true]  {
+    padding: 8px 17px 9px 37px;
+}
+
+DropDownToolButton, PrimaryDropDownToolButton {
+    padding: 5px 31px 6px 8px;
+}
+
+OutlinedDropDownPushButton[hasIcon=false],
+ElevatedDropDownPushButton[hasIcon=false],
+TonalDropDownPushButton[hasIcon=false],
+FilledDropDownPushButton[hasIcon=false] {
+    padding: 8px 40px 9px 24px;
+}
+
+TextDropDownPushButton[hasIcon=false] {
+    padding: 8px 34px 9px 24px;
+}
+
+OutlinedDropDownPushButton[hasIcon=true],
+ElevatedDropDownPushButton[hasIcon=true],
+TonalDropDownPushButton[hasIcon=true],
+FilledDropDownPushButton[hasIcon=true] {
+    padding: 8px 40px 9px 40px;
+}
+
+TextDropDownPushButton[hasIcon=true] {
+    padding: 8px 34px 9px 37px;
+}
+
+
+FilledPushButton,
+PrimaryToolButton,
+ToggleButton:checked,
+ToggleToolButton:checked {
+    color: white;
+}
+
+ElevatedPushButton {
+    color: #6750a4;
+}
+
+TonalPushButton {
+    color: black;
+}
+
+
+SplitDropButton,
+PrimarySplitDropButton {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#splitPushButton,
+#splitToolButton,
+#primarySplitPushButton,
+#primarySplitToolButton {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#splitPushButton:pressed,
+#splitToolButton:pressed,
+SplitDropButton:pressed {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.183);
+}
+
+PrimarySplitDropButton:pressed {
+    border-bottom: 1px solid #4d3c7b;
+}
+
+#primarySplitPushButton, #primarySplitToolButton {
+    border-right: 1px solid #8373ac;
+}
+
+#primarySplitPushButton:pressed, #primarySplitToolButton:pressed {
+    border-bottom: 1px solid #4d3c7b;
+}
+
+
+
+RadioButton {
+    min-height: 30px;
+    max-height: 30px;
+    padding-left: 5px;
+    background-color: transparent;
+    font: 14px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
+    color: black;
+}
+
+RadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    border: 2px solid #49454F;
+    background-color: transparent;
+    margin-right: 4px;
+}
+
+RadioButton::indicator:hover {
+    border: 2px solid #1D1B20;
+    background-color: rgba(0, 0, 0, 7);
+}
+
+RadioButton::indicator:pressed {
+    border: 2px solid #1D1B20;
+    background-color: rgba(0, 0, 0, 10);
+}
+
+RadioButton::indicator:checked {
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+            stop:0 #6750a4,
+            stop:0.5 #6750a4,
+            stop:0.6 transparent,
+            stop:0.8 transparent,
+            stop:0.9 #6750a4,
+            stop:1 #6750a4);
+}
+
+
+RadioButton:disabled {
+    color: rgba(0, 0, 0, 110);
+}
+
+RadioButton::indicator:disabled {
+    border: 2px solid #bbbbbb;
+    background-color: transparent;
+}
+
+RadioButton::indicator:disabled:checked {
+    border: none;
+    background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+            stop:0 #bbbbbb,
+            stop:0.5 #bbbbbb,
+            stop:0.6 transparent,
+            stop:0.8 transparent,
+            stop:0.9 #bbbbbb,
+            stop:1 #bbbbbb);
+}
+
+ChipBase {
+    color: #49454f;
+}
+
+FilterChip[hasIcon=false][hasDropMenu=false],
+InputChip[hasIcon=false][isClosable=false] {
+    padding: 7px 16px 8px 16px;
+}
+
+FilterChip[hasIcon=true][hasDropMenu=false],
+InputChip[hasIcon=true][isClosable=false] {
+    padding: 7px 16px 8px 38px;
+}
+
+FilterChip[hasIcon=false][hasDropMenu=true],
+InputChip[hasIcon=false][isClosable=true] {
+    padding: 7px 33px 8px 16px;
+}
+
+FilterChip[hasIcon=true][hasDropMenu=true],
+InputChip[hasIcon=true][isClosable=true] {
+    padding: 7px 33px 8px 38px;
+}</string>
+       </property>
+       <property name="text">
+        <string>9</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="ElevatedPushButton" name="button_c">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>C</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="ElevatedPushButton" name="button_div">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>/</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="ElevatedPushButton" name="button_minus">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="6">
+      <widget class="ElevatedPushButton" name="button_hex">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>HEX</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="ElevatedPushButton" name="button_dot">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>.</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="ElevatedPushButton" name="button_rb">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>)</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="ElevatedPushButton" name="button_mult">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>*</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="ElevatedPushButton" name="button_mod">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="ElevatedPushButton" name="button_ac">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>AC</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="ElevatedPushButton" name="button_0o">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0o</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="ElevatedPushButton" name="button_bin">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>BIN</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="ElevatedPushButton" name="button_e">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>E</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="ElevatedPushButton" name="button_plus">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="ElevatedPushButton" name="button_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="ElevatedPushButton" name="button_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="ElevatedPushButton" name="button_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="ElevatedPushButton" name="button_0x">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0x</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="5" rowspan="2" colspan="2">
+      <widget class="ElevatedPushButton" name="button_equal">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">PushButton, ToolButton, ToggleButton, ToggleToolButton {
+    color: #6750a4;
+    /* font: 14px 'Segoe UI', 'Microsoft YaHei'; */
+    padding: 8px 24px 9px 24px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+ToolButton {
+    padding: 8px 9px 9px 8px;
+}
+
+PushButton[hasIcon=false] {
+    padding: 8px 24px 9px 24px;
+}
+
+PushButton[hasIcon=true] {
+    padding: 8px 24px 9px 40px;
+}
+
+PushButton:disabled {
+    color: rgba(0, 0, 0, 0.37);
+}
+
+TextPushButton[hasIcon=false]  {
+    padding: 8px 13px 9px 13px;
+}
+
+TextPushButton[hasIcon=true]  {
+    padding: 8px 17px 9px 37px;
+}
+
+DropDownToolButton, PrimaryDropDownToolButton {
+    padding: 5px 31px 6px 8px;
+}
+
+OutlinedDropDownPushButton[hasIcon=false],
+ElevatedDropDownPushButton[hasIcon=false],
+TonalDropDownPushButton[hasIcon=false],
+FilledDropDownPushButton[hasIcon=false] {
+    padding: 8px 40px 9px 24px;
+}
+
+TextDropDownPushButton[hasIcon=false] {
+    padding: 8px 34px 9px 24px;
+}
+
+OutlinedDropDownPushButton[hasIcon=true],
+ElevatedDropDownPushButton[hasIcon=true],
+TonalDropDownPushButton[hasIcon=true],
+FilledDropDownPushButton[hasIcon=true] {
+    padding: 8px 40px 9px 40px;
+}
+
+TextDropDownPushButton[hasIcon=true] {
+    padding: 8px 34px 9px 37px;
+}
+
+
+FilledPushButton,
+PrimaryToolButton,
+ToggleButton:checked,
+ToggleToolButton:checked {
+    color: white;
+}
+
+ElevatedPushButton {
+    color: #6750a4;
+}
+
+TonalPushButton {
+    color: black;
+}
+
+
+SplitDropButton,
+PrimarySplitDropButton {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#splitPushButton,
+#splitToolButton,
+#primarySplitPushButton,
+#primarySplitToolButton {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#splitPushButton:pressed,
+#splitToolButton:pressed,
+SplitDropButton:pressed {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.183);
+}
+
+PrimarySplitDropButton:pressed {
+    border-bottom: 1px solid #4d3c7b;
+}
+
+#primarySplitPushButton, #primarySplitToolButton {
+    border-right: 1px solid #8373ac;
+}
+
+#primarySplitPushButton:pressed, #primarySplitToolButton:pressed {
+    border-bottom: 1px solid #4d3c7b;
+}
+
+
+
+RadioButton {
+    min-height: 30px;
+    max-height: 30px;
+    padding-left: 5px;
+    background-color: transparent;
+    font: 14px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
+    color: black;
+}
+
+RadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    border: 2px solid #49454F;
+    background-color: transparent;
+    margin-right: 4px;
+}
+
+RadioButton::indicator:hover {
+    border: 2px solid #1D1B20;
+    background-color: rgba(0, 0, 0, 7);
+}
+
+RadioButton::indicator:pressed {
+    border: 2px solid #1D1B20;
+    background-color: rgba(0, 0, 0, 10);
+}
+
+RadioButton::indicator:checked {
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+            stop:0 #6750a4,
+            stop:0.5 #6750a4,
+            stop:0.6 transparent,
+            stop:0.8 transparent,
+            stop:0.9 #6750a4,
+            stop:1 #6750a4);
+}
+
+
+RadioButton:disabled {
+    color: rgba(0, 0, 0, 110);
+}
+
+RadioButton::indicator:disabled {
+    border: 2px solid #bbbbbb;
+    background-color: transparent;
+}
+
+RadioButton::indicator:disabled:checked {
+    border: none;
+    background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+            stop:0 #bbbbbb,
+            stop:0.5 #bbbbbb,
+            stop:0.6 transparent,
+            stop:0.8 transparent,
+            stop:0.9 #bbbbbb,
+            stop:1 #bbbbbb);
+}
+
+ChipBase {
+    color: #49454f;
+}
+
+FilterChip[hasIcon=false][hasDropMenu=false],
+InputChip[hasIcon=false][isClosable=false] {
+    padding: 7px 16px 8px 16px;
+}
+
+FilterChip[hasIcon=true][hasDropMenu=false],
+InputChip[hasIcon=true][isClosable=false] {
+    padding: 7px 16px 8px 38px;
+}
+
+FilterChip[hasIcon=false][hasDropMenu=true],
+InputChip[hasIcon=false][isClosable=true] {
+    padding: 7px 33px 8px 16px;
+}
+
+FilterChip[hasIcon=true][hasDropMenu=true],
+InputChip[hasIcon=true][isClosable=true] {
+    padding: 7px 33px 8px 38px;
+}</string>
+       </property>
+       <property name="text">
+        <string>=</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="ElevatedPushButton" name="button_0b">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0b</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="ElevatedPushButton" name="button_pow">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>**</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="ElevatedPushButton" name="button_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="5">
+      <widget class="CaptionLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>30</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">CaptionLabel{
+	color: #6750a4;
+
+    padding: 8px 24px 9px 24px;
+    outline: none;
+	border: 3px outset #6750a4;
+	border-radius: 10px;
+    background-color: transparent;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="midLineWidth">
+        <number>1</number>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="margin">
+        <number>1</number>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="ElevatedPushButton" name="button_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="borderRadius" stdset="0">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CaptionLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>FilledPushButton</class>
+   <extends>QPushButton</extends>
+   <header>qmaterialwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>ElevatedPushButton</class>
+   <extends>FilledPushButton</extends>
+   <header>qmaterialwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
