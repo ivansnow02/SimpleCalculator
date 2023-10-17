@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QFrame
 
-from ui.cal_widget import Ui_Frame
+from app.resource.ui.cal_widget import Ui_Frame
 
 
 def is_number(num):

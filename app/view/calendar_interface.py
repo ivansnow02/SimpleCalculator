@@ -3,7 +3,7 @@ import sys
 from PyQt5.QtCore import Qt, QDate
 from PyQt5.QtWidgets import QFrame, QApplication
 
-from ui.calendar import Ui_Frame
+from app.resource.ui.calendar import Ui_Frame
 
 
 class Calendar(Ui_Frame, QFrame):

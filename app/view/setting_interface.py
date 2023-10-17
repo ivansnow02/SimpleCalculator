@@ -1,0 +1,2 @@
+from qfluentwidgets import setThemeColor
+from qmaterialwidgets import setThemeColor as setThemeColor2
