@@ -10,6 +10,7 @@ from app.resource.ui.rate import Ui_Frame
 class ExchangeRate(Ui_Frame, QFrame):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
+        self.rate_data = rate_spider.get_rate()
         self.setupUi(self)
 
     def setupUi(self, Frame):
@@ -18,9 +19,7 @@ class ExchangeRate(Ui_Frame, QFrame):
         self.setObjectName("rate")
         self.button_cal.clicked.connect(self.calculate)
         self.button_ac.clicked.connect(self.clean)
-        rate_data = rate_spider.get_rate()
-        if rate_data is dict:
-            items = rate_data.keys()
+        items = self.rate_data.keys()
         # self.ComboBox.setLabel("币种")
         self.ComboBox.addItems(items)
         self.ComboBox.setCurrentIndex(0)
@@ -28,8 +27,8 @@ class ExchangeRate(Ui_Frame, QFrame):
 
     def calculate(self):
         current_text = self.ComboBox.currentText()
-        rate_data = rate_spider.get_rate()
-        rate = rate_data[current_text]
+
+        rate = self.rate_data[current_text]
         try:
             input = float(self.LineEdit.text())
             output = input * rate

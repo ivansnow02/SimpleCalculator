@@ -1,5 +1,6 @@
 import json
 import time
+import os
 from urllib import request
 
 
@@ -10,31 +11,33 @@ def save():
         data = {}
         with request.urlopen(req) as response:
             json_data = json.loads(response.read().decode('utf-8'))
-            data = json_data['conversion_rates']
-            data['update_time'] = json_data['time_next_update_unix']
-        with open('../resource/conversion_rates.json', 'w') as f:
+            data = json_data
+        if not os.path.exists("data/rate.json"):
+            os.mkdir("data")
+        with open("data/rate.json", "w") as f:
             json.dump(data, f)
+
     except Exception as e:
         return e
 
 
 def load():
     try:
-        with open('../resource/conversion_rates.json', 'r') as f:
-            return json.load(f)
+        with open("data/rate.json", "r") as f:
+            data = json.load(f)
+            return data
     except Exception as e:
         return e
 
 
-def get_rate():
-    try:
+def get_rate() -> dict:
+    save()
+    data = load()
+    update_time = data["time_next_update_unix"]
+    if int(time.time()) > int(update_time):
+        save()
         data = load()
-        if data['update_time'] < int(time.time()) or data == {} or data['update_time'] is None:
-            save()
-            data = load()
-        return data
-    except Exception as e:
-        return e
+    return data["conversion_rates"]
 
 
 if __name__ == '__main__':
