@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\calendar.ui'
+# Form implementation generated from reading ui file '.\app\resource\ui\calendar.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Frame(object):
     def setupUi(self, Frame):
         Frame.setObjectName("Frame")
-        Frame.resize(448, 546)
+        Frame.resize(544, 488)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
         Frame.setFont(font)
@@ -59,14 +59,14 @@ class Ui_Frame(object):
         self.CalendarPicker_end = CalendarPicker(Frame)
         self.CalendarPicker_end.setObjectName("CalendarPicker_end")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.CalendarPicker_end)
-        self.button_cal = ElevatedPushButton(Frame)
-        self.button_cal.setBorderRadius(10)
-        self.button_cal.setObjectName("button_cal")
-        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.button_cal)
         self.button_ac = ElevatedPushButton(Frame)
         self.button_ac.setBorderRadius(10)
         self.button_ac.setObjectName("button_ac")
-        self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.button_ac)
+        self.formLayout.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.button_ac)
+        self.button_cal = ElevatedPushButton(Frame)
+        self.button_cal.setBorderRadius(10)
+        self.button_cal.setObjectName("button_cal")
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.button_cal)
         self.label = BodyLabel(Frame)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
@@ -74,6 +74,12 @@ class Ui_Frame(object):
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
         self.label.setSizePolicy(sizePolicy)
         self.label.setMinimumSize(QtCore.QSize(0, 169))
+        font = QtGui.QFont()
+        font.setFamily("微软雅黑 Light")
+        font.setPointSize(19)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
         self.label.setStyleSheet("BodyLabel{\n"
 "    color: #6750a4;\n"
 "\n"
@@ -85,7 +91,7 @@ class Ui_Frame(object):
 "}")
         self.label.setObjectName("label")
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.label)
-        self.gridLayout_3.addLayout(self.formLayout, 0, 0, 1, 1)
+        self.gridLayout_3.addLayout(self.formLayout, 0, 1, 1, 1)
 
         self.retranslateUi(Frame)
         QtCore.QMetaObject.connectSlotsByName(Frame)
@@ -95,7 +101,7 @@ class Ui_Frame(object):
         Frame.setWindowTitle(_translate("Frame", "Frame"))
         self.BodyLabel.setText(_translate("Frame", "起始日期"))
         self.BodyLabel_2.setText(_translate("Frame", "结束日期"))
-        self.button_cal.setText(_translate("Frame", "计算"))
         self.button_ac.setText(_translate("Frame", "清空"))
+        self.button_cal.setText(_translate("Frame", "计算"))
         self.label.setText(_translate("Frame", "Body label"))
 from qmaterialwidgets import BodyLabel, CalendarPicker, ElevatedPushButton

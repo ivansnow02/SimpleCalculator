@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>448</width>
-    <height>546</height>
+    <width>544</width>
+    <height>488</height>
    </rect>
   </property>
   <property name="font">
@@ -19,7 +19,7 @@
    <string>Frame</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_3">
-   <item row="0" column="0">
+   <item row="0" column="1">
     <layout class="QFormLayout" name="formLayout">
      <item row="0" column="0">
       <widget class="BodyLabel" name="BodyLabel">
@@ -76,10 +76,10 @@
      <item row="1" column="1">
       <widget class="CalendarPicker" name="CalendarPicker_end"/>
      </item>
-     <item row="3" column="1">
-      <widget class="ElevatedPushButton" name="button_cal">
+     <item row="5" column="1">
+      <widget class="ElevatedPushButton" name="button_ac">
        <property name="text">
-        <string>计算</string>
+        <string>清空</string>
        </property>
        <property name="borderRadius">
         <number>10</number>
@@ -87,9 +87,9 @@
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="ElevatedPushButton" name="button_ac">
+      <widget class="ElevatedPushButton" name="button_cal">
        <property name="text">
-        <string>清空</string>
+        <string>计算</string>
        </property>
        <property name="borderRadius">
         <number>10</number>
@@ -109,6 +109,14 @@
          <width>0</width>
          <height>169</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>19</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
        </property>
        <property name="styleSheet">
         <string notr="true">BodyLabel{

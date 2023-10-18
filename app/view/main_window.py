@@ -7,7 +7,7 @@ from qframelesswindow import AcrylicWindow
 
 
 from app.view import home_interface, calendar_interface, exchange_rate_interface
-from qfluentwidgets import FluentWindow
+from qfluentwidgets import FluentWindow, NavigationItemPosition
 from qfluentwidgets import FluentIcon as FIF
 from qfluentwidgets import setThemeColor
 from qmaterialwidgets import setThemeColor as setThemeColor2
